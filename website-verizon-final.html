@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Verizon Interactive Video: Samsung Galaxy S8 > Invodo Website Version</title>
+	<!-- JS Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdn1.raptmedia.com/system/scripts/api.v2.min.js.gz"></script>
+	<script type="text/javascript" src="dropit.js"></script>
+	<script type="text/javascript">
+		var guid;
+		window.addEventListener('message', function(event) {
+			if (event.data.guid) {
+				guid = event.data.guid;
+			}
+		})
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="dropit.css">
+	<style type="text/css">
+	@font-face {
+			font-family: 'Neue Haas Grotesk';
+			src: url('https://ixd.invodo.com/vzw-s8-experience/assets/fonts/NeueHaasGrotesk/NHaasGroteskDSStd-65Md.otf');
+		}
+
+		#iframe-wrapper,
+		#newFrame,
+		#wrapper {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			margin: 0;
+			text-align: center;
+		}
+
+		#importURL {
+			height: 100% !important;
+			width: 100% !important;
+		}
+
+		#menu-container {
+			display: none;
+			position: absolute;
+			top: 5%;
+			right: 4%;
+			z-index: 2147483647 !important;
+		}
+
+		li {
+			text-align: left;
+			margin-top: 8px;
+		}
+
+		li a {
+			color: white;
+			text-decoration: none;
+			padding: 10px 25px;
+			font-size: 1.5em;
+			font-family: 'Neue Haas Grotesk';
+		}
+
+		.links {
+			margin-left: 23px;
+			margin-top: 10px;
+		}
+
+		span {
+			position: absolute;
+			top: 1px;
+			right: 1px;
+		}
+
+		@media only screen and (min-width: 1024px) {
+			#menu-container {
+				top: 3%;
+				right: 4%;
+				z-index: 2147483647 !important;
+			}
+			.links {
+				margin-left: 30px !important;
+			}
+			li a {
+				color: white;
+				font-size: 3.0em;
+				margin-right: 25px;
+			}
+		}
+
+		@media only screen and (max-width: 480px) {
+			#menu-container {
+				display: none;
+				position: absolute;
+				top: 2%;
+				right: 4%;
+				z-index: 2147483647 !important;
+			}
+			li {
+				text-align: left;
+				margin-top: 8px;
+			}
+			li a {
+				color: white;
+				text-decoration: none;
+				padding: 10px 15px;
+				font-size: 1.10em;
+				font-family: 'Neue Haas Grotesk';
+				margin-right: 5px !important;
+			}
+			.links {
+				margin-left: 23px;
+				margin-top: 10px;
+			}
+			span {
+				position: absolute;
+				top: 1px;
+				right: 1px;
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+			#fullscreen-button {
+				display: none;
+			}
+		}
+	}
+	</style>
+
+</head>
+
+<body>
+	<div id='wrapper'>
+		<div id='iframe-wrapper'>
+			<iframe id='importURL' src="https://cdn1.raptmedia.com/projects/eRDZPjvG/embed?autoplay=false&controls=overlay" name="verizon-galaxy-s-8-project" width=720 height=405 scrolling=no frameborder=0 marginheight=0 marginwidth=0 webkitallowfullscreen=true mozallowfullscreen=true
+			    allowfullscreen=true><p style="text-align:center">Iframes are required to view this content.</p></iframe>
+			<div id='menu-container'>
+				<ul class="menu">
+					<li>
+						<a href="#">Select a size <span id='plus-minus'>+</span></a>
+						<ul>
+							<li><a href="#" data-node="Small" class="links">Small</a></li>
+							<li><a href="#" data-node="Medium" class="links">Medium</a></li>
+							<li><a href="#" data-node="Large" class="links">Large</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="verizon3.js"></script>
+</body>
+
+</html>
